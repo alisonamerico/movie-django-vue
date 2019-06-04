@@ -13,6 +13,7 @@ codecov = "*"
 django = "*"
 djangorestframework = "*"
 gunicorn = "*"
+python-decouple = "*"
 
 [requires]
 python_version = "3.7"
