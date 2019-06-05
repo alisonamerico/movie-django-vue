@@ -20,6 +20,7 @@ dj-database-url = "*"
 django-s3-folder-storage = "*"
 collectfast = "*"
 django-cors-headers = "*"
+django-filter = "*"
 
 [requires]
 python_version = "3.7"
