@@ -1,4 +1,4 @@
-from rest_framework import viewsets
+from rest_framework import viewsets, filters
 from .serializers import MovieSerializer
 from .models import Movie
 
@@ -12,3 +12,6 @@ class MovieViewSet(viewsets.ModelViewSet):
 
     authentication_classes = (SessionAuthentication,)
     permission_classes = (IsAuthenticated,)
+    filter_backends = (filters.SearchFilter, filters.OrderingFilter,)
+    search_fields = ('movie_title', 'director_name', 'genres', 'imdb_score')
+    ordering_fields = ('movie_title', 'director_name')

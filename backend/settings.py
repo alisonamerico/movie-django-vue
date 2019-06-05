@@ -175,3 +175,8 @@ if AWS_ACCESS_KEY_ID:
 
     INSTALLED_APPS.append('s3_folder_storage')  # pragma: no cover
     INSTALLED_APPS.append('storages')  # pragma: no cover
+
+
+REST_FRAMEWORK = {
+    'DEFAULT_FILTER_BACKENDS': ('django_filters.rest_framework.DjangoFilterBackend',)
+}
