@@ -1,5 +1,8 @@
-from django.http import HttpResponse
+from rest_framework import viewsets
+from .serializers import MovieSerializer
+from .models import Movie
 
 
-def home(request):
-    return HttpResponse('Olá Django e Vue!')
+class MovieViewSet(viewsets.ModelViewSet):
+    serializer_class = MovieSerializer
+    queryset = Movie.objects.all()
