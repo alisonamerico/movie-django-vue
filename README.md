@@ -53,6 +53,15 @@ Para executar o servidor localmente (com virtualenv ativado):
 ```console
 python manager.py runserver
 ```
+API disponível em:
+```console
+http://127.0.0.1:8000/api/
+```
+Obs.: Para visualizar os dados na API é necessário logar com as credências criadas.
+```console
+http://127.0.0.1:8000/api/movies
+```
+
 Para executar os testes:
 ```console
 pytest backend --cov=backend
@@ -79,7 +88,7 @@ Aplicativo disponível em:
 http://localhost:3000
 ```
 
-### Built With
+### Construído com
 * [Python](https://www.python.org/) - Uma linguagem de programação que permite trabalhar rapidamente e integrar sistemas de maneira mais eficaz.
 * [Django](http://djangoproject.org/) - Um framework Web Python de alto nível que incentiva o desenvolvimento rápido e um design limpo e pragmático.
 * [Nuxt](https://nuxtjs.org/) - O Nuxt.js é uma estrutura mínima para criar aplicativos Vue.js com renderização do lado do servidor, divisão de código, hot-recarregamento, geração estática e muito mais.
