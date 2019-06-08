@@ -4,6 +4,7 @@
       <div class="col-12 text-right mb-4">
         <div class="d-flex justify-content-between">
           <h3>The Movies</h3>
+          <nuxt-link to="/" class="btn btn-info">Back Home</nuxt-link>
         </div>
       </div>
       <template v-for="movie in movies">
