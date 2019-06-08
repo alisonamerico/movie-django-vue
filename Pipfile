@@ -21,6 +21,7 @@ django-s3-folder-storage = "*"
 collectfast = "*"
 django-cors-headers = "*"
 django-filter = "*"
+djangorestframework-jwt = "*"
 
 [requires]
 python_version = "3.7"

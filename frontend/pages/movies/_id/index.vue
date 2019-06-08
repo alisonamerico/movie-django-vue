@@ -1,13 +1,19 @@
 <template>
   <main class="container my-5">
     <div class="row">
+      <div class="col-12 text-right mb-4">
+        <div class="d-flex justify-content-between">
+          <h3></h3>
+          <nuxt-link to="/movies" class="btn btn-info">Back List</nuxt-link>
+        </div>
+      </div>
       <div class="col-12 text-center my-3">
         <h2 class="mb-3 display-4 text-uppercase">{{ movie.movie_title }}</h2>
       </div>
       <div class="col-md-6 mb-4">
         <img
           class="img-fluid"
-          style="width: 400px; border-radius: 10px; box-shadow: 0 1rem 1rem rgba(0,0,0,.7);"
+          style="width: 300px; border-radius: 10px; box-shadow: 0 1rem 1rem rgba(0,0,0,.7);"
           :src="movie.picture"
           alt
         >
@@ -25,10 +31,7 @@
           <h4>Director Name</h4>
           <p>{{ movie.director_name }}</p>
           <h4>Imdb Score</h4>
-          <p>{{ movie.imdb_score }}</p>
-          <h4>Picture</h4>
-          <p>{{ movie.picture }}</p>
-          
+          <p>{{ movie.imdb_score }}</p>          
         </div>
       </div>
     </div>
