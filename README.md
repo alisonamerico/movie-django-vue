@@ -11,7 +11,7 @@ Aplicação disponível em https://movie-alison.herokuapp.com/
 ### Requirements
 * [Python3](https://www.python.org/download/releases/3.0/)
 * [Pipenv](https://pypi.org/project/pipenv/)
-* [Npm](https://www.npmjs.com/)
+* [Npm](https://www.npmjs.com/get-npm)
 
 ### Backend
 
@@ -58,6 +58,10 @@ API disponível em:
 http://127.0.0.1:8000/api/
 ```
 Obs.: Para visualizar os dados na API é necessário logar com as credências criadas.
+```console
+http://127.0.0.1:8000/api/token/
+```
+Visualizar os dados:
 ```console
 http://127.0.0.1:8000/api/movies
 ```
