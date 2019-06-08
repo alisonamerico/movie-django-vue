@@ -4,6 +4,7 @@
       <div class="col-12 text-right mb-4">
         <div class="d-flex justify-content-between">
           <h3>The Movies</h3>
+          <input type="text" name="search" placeholder="Search..."> 
           <nuxt-link to="/" class="btn btn-info">Back Home</nuxt-link>
         </div>
       </div>
@@ -53,4 +54,14 @@ export default {
 };
 </script>
 <style scoped>
+ input[type=text] {
+  width: 750px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 70% */
+input[type=text]:focus {
+  width: 70%;
+}
 </style>
