@@ -4,7 +4,7 @@
       <div class="col-12 text-right mb-4">
         <div class="d-flex justify-content-between">
           <h3></h3>
-          <nuxt-link to="/movies" class="btn btn-info">Back List</nuxt-link>
+          <router-link to="/movies" class="btn btn-info">Back List</router-link>
         </div>
       </div>
       <div class="col-12 text-center my-3">
@@ -46,7 +46,7 @@ export default {
   },
   async asyncData({ $axios, params }) {
     try {
-      let movie = await $axios.$get(`/movies/${params.id}`);
+      let movie = await $axios.$get(`/moveis/detail/${params.id}`);
       return { movie };
     } catch (e) {
       return { movie: [] };

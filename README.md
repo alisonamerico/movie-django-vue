@@ -74,7 +74,7 @@ pytest backend --cov=backend
 ### Frontend
 Abra uma nova instância do terminal (a partir do diretório raiz do projeto) e navegue até o diretório `frontend`:
 ```console
-cd frontend
+cd web
 ```
 
 Instalar dependências:
@@ -89,7 +89,7 @@ npm run dev
 
 Aplicativo disponível em:
 ```console
-http://localhost:3000
+http://localhost:8080/#/
 ```
 
 ### Construído com

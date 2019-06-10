@@ -22,6 +22,7 @@ collectfast = "*"
 django-cors-headers = "*"
 django-filter = "*"
 djangorestframework-jwt = "*"
+django-rest-auth = "*"
 
 [requires]
 python_version = "3.7"

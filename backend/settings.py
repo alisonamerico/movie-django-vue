@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'backend.movie',
     'rest_framework',
+    'rest_auth',
     'corsheaders',
 ]
 
@@ -60,6 +61,7 @@ MIDDLEWARE = [
 
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:3000',
+    'http://localhost:8080',
 )
 
 ROOT_URLCONF = 'backend.urls'
@@ -177,12 +179,18 @@ if AWS_ACCESS_KEY_ID:
     INSTALLED_APPS.append('storages')  # pragma: no cover
 
 
+# CONFIG. REST_FRAMEWORK
 REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',
+    ),
     'DEFAULT_FILTER_BACKENDS': (
         'django_filters.rest_framework.DjangoFilterBackend',
     ),
     'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework.authentication.SessionAuthentication',
         'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
     ),
+    'COERCE_DECIMAL_TO_STRING': False,
 }
+
+REST_USE_JWT = True
