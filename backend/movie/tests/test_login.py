@@ -9,7 +9,7 @@
 #
 # @pytest.fixture
 # def resp(client, db):
-#     resp = client.get('/api/token/', secure=True)
+#     resp = client.get('/rest-auth/login', secure=True)
 #     return resp
 #
 #
