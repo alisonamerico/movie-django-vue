@@ -107,3 +107,6 @@ venv.bak/
 # arquivos staticos
 staticfiles
 staticfiles/
+
+
+node_modules/
