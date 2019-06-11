@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'backend.movie',
     'rest_framework',
+    'rest_framework.authtoken',
     'rest_auth',
     'corsheaders',
 ]
@@ -188,6 +189,7 @@ REST_FRAMEWORK = {
         'django_filters.rest_framework.DjangoFilterBackend',
     ),
     'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.TokenAuthentication',
         'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
     ),
     'COERCE_DECIMAL_TO_STRING': False,
