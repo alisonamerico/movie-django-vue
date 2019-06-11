@@ -2,7 +2,7 @@
   <div class="card movie-card">
     <img :src="movie.picture" class="card-img-top" >
     <div class="card-body">
-      <h5 class="card-title">{{ movie.movie_title }}</h5>
+      <h5 class="card-title">{{ movie.movie_title | capitalize }}</h5>
       <div class="action-buttons">
         <router-link :to="`/detail/${movie.id}/`" class="btn btn-sm btn-success"> View </router-link>
       </div>
