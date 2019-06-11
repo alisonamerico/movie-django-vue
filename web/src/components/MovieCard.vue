@@ -4,7 +4,7 @@
     <div class="card-body">
       <h5 class="card-title">{{ movie.movie_title }}</h5>
       <div class="action-buttons">
-        <router-link :to="`/movies/detail/${movie.id}/`" class="btn btn-sm btn-success"> View </router-link>
+        <router-link :to="`/detail/${movie.id}/`" class="btn btn-sm btn-success"> View </router-link>
       </div>
     </div>
   </div>
