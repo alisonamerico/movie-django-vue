@@ -17,7 +17,7 @@ const router = new Router({
       component: () => import('./views/Movies.vue')
     },
     {
-      path: '/moveis/detail',
+      path: '/detail',
       name: 'detail',
       component: () => import('./views/MovieDetail.vue')
     },

@@ -1,5 +1,5 @@
 # movie-django-vue
-Build full application using Django, DjangoRestFramework and Nuxt.js
+Build full application using Django, DjangoRestFramework and Vue.js
 
 
 [![codecov](https://codecov.io/gh/alisonamerico/movie-django-vue/branch/master/graph/badge.svg)](https://codecov.io/gh/alisonamerico/movie-django-vue)
@@ -116,4 +116,4 @@ http://localhost:8080/login
 ### Construído com
 * [Python](https://www.python.org/) - Uma linguagem de programação que permite trabalhar rapidamente e integrar sistemas de maneira mais eficaz.
 * [Django](http://djangoproject.org/) - Um framework Web Python de alto nível que incentiva o desenvolvimento rápido e um design limpo e pragmático.
-* [Nuxt](https://nuxtjs.org/) - O Nuxt.js é uma estrutura mínima para criar aplicativos Vue.js com renderização do lado do servidor, divisão de código, hot-recarregamento, geração estática e muito mais.
+* [Vue](https://vuejs.org) - É uma estrutura progressiva para construir interfaces com o usuário. 

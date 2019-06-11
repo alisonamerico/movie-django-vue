@@ -46,7 +46,7 @@ export default {
   },
   async asyncData({ $axios, params }) {
     try {
-      let movie = await $axios.$get(`/moveis/detail/${params.id}`);
+      let movie = await $axios.$get(`/detail/${params.id}`);
       return { movie };
     } catch (e) {
       return { movie: [] };
