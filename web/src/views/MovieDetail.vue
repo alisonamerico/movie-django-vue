@@ -39,33 +39,15 @@
 </template>
 <script>
 export default {
-  head() {
-    return {
-      title: "View Movie"
-    };
-  },
-  async asyncData({ $axios, params }) {
-    try {
-      let movie = await $axios.$get(`/detail/${params.id}`);
-      return { movie };
-    } catch (e) {
-      return { movie: [] };
+  computed: {
+    movie () {
+      return this.$store.state.movie
     }
   },
-  data() {
-    return {
-      movie: {
-        movie_title: "",
-        genres: "",
-        duration: "",
-        title_year: "",
-        director_name: "",
-        imdb_score: "",
-        picture: ""
-      }
-    };
+async beforeMount () {
+    await this.$store.dispatch('loadMovie', this.$route.params.id)
   }
-};
+}
 </script>
 <style scoped>
 </style>
