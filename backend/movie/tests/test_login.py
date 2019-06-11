@@ -12,5 +12,10 @@ def resp(client, db):
     return resp
 
 
+"""
+Valida status code da API, antes de ser acessada com as credencias.
+"""
+
+
 def test_status_code(resp):
     assert resp.status_code == 405

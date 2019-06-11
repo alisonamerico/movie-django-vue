@@ -1,6 +1,10 @@
 from rest_framework import serializers  # pragma: no cover
 from .models import Movie  # pragma: no cover
 
+"""
+Informa os campos que seram visualizados na API.
+"""
+
 
 class MovieSerializer(serializers.ModelSerializer):  # pragma: no cover
 

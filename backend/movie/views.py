@@ -4,6 +4,12 @@ from rest_framework.permissions import IsAuthenticated
 from .serializers import MovieSerializer
 from .models import Movie
 
+"""
+Foi usado na API um campo 'search' para pesquisar e ordenar os campos mesma.
+Com autenticação via token para gerenciar o acesso dos usuários.
+
+"""
+
 
 class MovieViewSet(viewsets.ModelViewSet):
     serializer_class = MovieSerializer
