@@ -25,4 +25,4 @@ def home_resp_with_user(django_user_model, client: Client):
 
 
 def test_home_status_code(home_resp):
-    assert 401 == home_resp.status_code
+    assert 403 == home_resp.status_code
