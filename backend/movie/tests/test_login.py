@@ -1,7 +1,7 @@
 import pytest
 
 """
-Executa testes de validação do usuário.
+Executa testes de validação do status code usuário ao site.
 """
 
 
