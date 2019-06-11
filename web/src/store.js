@@ -8,9 +8,13 @@ export default new Vuex.Store({
   state: {
     user: null,
     token: null,
-    movies: []
+    movies: [],
+    movie: {}
   },
   mutations: {
+    SET_DETAIL (state, movie) {
+      state.movie = movie
+    },
     SET_MOVIE (state, movies = []) {
       state.movies = movies
     },
@@ -45,6 +49,9 @@ export default new Vuex.Store({
       res => {
         context.commit('SET_MOVIE', res.data)
       }
+    ),
+    loadMovie: ({ commit }, id) => axios.get(`api/movies/${id}`).then(
+      res => commit('SET_DETAIL', res.data)
     )
   }
 })

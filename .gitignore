@@ -110,3 +110,5 @@ staticfiles/
 
 
 node_modules/
+mediafiles/
+staticfiles/
