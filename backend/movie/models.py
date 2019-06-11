@@ -1,4 +1,7 @@
 from django.db import models
+"""
+Representação do banco de dados com seus respectivos campos referente aos filmes.
+"""
 
 
 class Movie(models.Model):

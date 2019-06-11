@@ -12,6 +12,8 @@ Build full application using Django, DjangoRestFramework and Vue.js
 * [Pipenv](https://pypi.org/project/pipenv/)
 * [Npm](https://www.npmjs.com/get-npm) or [Yarn](https://yarnpkg.com/en/)
 
+Obs.: Versão do Node usada v10.16.0 LTS
+
 ### Backend
 
 Processos utilizados no desevolvimento do projeto:

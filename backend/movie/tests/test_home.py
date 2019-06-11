@@ -12,6 +12,11 @@ def home_resp(client):
     return _resp(client)
 
 
+"""
+Valida url Root(raiz da API).
+"""
+
+
 def _resp(client):
     """Função simples para evitar _pytest.warning_types.RemovedInPytest4Warning: Fixture "resp" chamado diretamente."""
     return client.get('/api/', secure=True)
